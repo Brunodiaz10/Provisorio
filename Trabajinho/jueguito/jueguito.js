@@ -2,18 +2,18 @@
 
 function setup() {
   createCanvas(640, 480);
-  objJuego = new Juego();  // Crear una instancia del juego
+  objJuego = new Juego();  
 }
 
 function draw() {
   background(0);
-  objJuego.dibujar();  // Dibujar los elementos del juego
+  objJuego.dibujar();   
 }
 
 function keyPressed() {
-  objJuego.personaje.teclapresionada(keyCode);  // Llamar a la función en el personaje dentro del juego
+  objJuego.personaje.teclapresionada(keyCode);  
 }
 
 function keyReleased() {
-  objJuego.personaje.teclapresionLiberada(keyCode);  // Llamar a la función en el personaje dentro del juego
+  objJuego.personaje.teclapresionLiberada(keyCode);  
 }
