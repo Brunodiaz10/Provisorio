@@ -10,11 +10,10 @@
     fill(this.miColor);
     ellipse(this.posX, this.posY, 30, 30);
 
-    // Movimiento continuo basado en la dirección
+    // Movimiento continuo 
     this.posX += this.direccion * 5;  // Movimiento en X basado en la dirección
   }
-
-  // Función que maneja la tecla presionada
+  
   teclapresionada(keyCode) {
     if (keyCode == LEFT_ARROW) {
       this.direccion = -1;  // Movimiento a la izquierda
@@ -23,10 +22,9 @@
     }
   }
 
-  // Función que maneja la liberación de la tecla
   teclapresionLiberada(keyCode) {
     if (keyCode == LEFT_ARROW || keyCode == RIGHT_ARROW) {
-      this.direccion = 0;  // Detener movimiento al soltar la tecla
+      this.direccion = 0;  
     }
   }
 }
